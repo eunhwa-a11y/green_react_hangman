@@ -12,7 +12,7 @@ const LetterGrid = ({secretWord, guessedLetters, answerLength, complete})=>{
       alert('정답입니다!');
       complete();
     }
-  },[answer]);
+  },[answer, answerLength, complete]);
 
   /*
   guessedLetters 값이 변경되면 answer를 업데이트
@@ -29,7 +29,7 @@ const LetterGrid = ({secretWord, guessedLetters, answerLength, complete})=>{
 
     console.log('실행', newCount);
 
-  },[guessedLetters])
+  },[guessedLetters, secretWord])
 
   let letters = [...secretWord].map((letter, idx)=>{
     // isShown -> 사용자가 입력한 게 정답과 일치한지 확인하도록 설정한 변수
