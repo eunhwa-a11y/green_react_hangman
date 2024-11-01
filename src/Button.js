@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 
 const Button = ({value, onclick})=>{
   const [isClicked,setIsClicked] = useState(false);
