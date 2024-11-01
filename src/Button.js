@@ -8,10 +8,9 @@ const Button = ({value, onclick})=>{
   if(isClicked){
     className = 'hidden';
   }
-
   let clickHandler = ()=>{
-    setIsClicked(true)
-    onclick(value)
+    setIsClicked(true);
+    onclick(value);
   }
 
   return(
